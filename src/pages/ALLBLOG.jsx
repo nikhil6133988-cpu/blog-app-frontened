@@ -10,7 +10,7 @@ const AllBlogs = function () {
   useEffect(function () {
     async function FetchBlogs() {
       try {
-        const response = await axios.get("https://render.com/docs/web-services#port-binding/api/v1/blogs");
+        const response = await axios.get("https://blog-app-3-0mfy.onrender.com/api/v1/blogs");
         setBlogs(response.data);
       } catch (error) {
         toast.error("No blog something went wrong!!!!");

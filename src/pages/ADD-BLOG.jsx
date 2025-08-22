@@ -28,7 +28,7 @@ const AddBlog = function () {
 
     try {
       setIsLoading(true);
-      await axios.post("https://render.com/docs/web-services#port-binding/api/v1/blogs", newBlog);
+      await axios.post("https://blog-app-3-0mfy.onrender.com/api/v1/blogs", newBlog);
       navigate("/blogs");
       toast("new toast added!!");
     } catch (error) {

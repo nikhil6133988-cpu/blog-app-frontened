@@ -14,7 +14,7 @@ const SingleBlog = () => {
     const fetchSingleBlog = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/v1/blogs/${id}` // dynamic id
+          `https://blog-app-3-0mfy.onrender.com/api/v1/blogs/${id}` // dynamic id
         );
         setBlog(response.data);
         console.log(response.data);
