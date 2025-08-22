@@ -32,7 +32,7 @@ const SingleBlog = () => {
   async function deleteBlog(id) {
     try {
       const response = await axios.delete(
-        `http://localhost:8080/api/v1/blogs/${id}`
+        `https://render.com/docs/web-services#port-binding/api/v1/blogs/${id}`
       );
       toast("deleted");
       navigate("/blogs");
