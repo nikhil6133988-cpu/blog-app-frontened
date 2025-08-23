@@ -31,8 +31,8 @@ const SingleBlog = () => {
 
   async function deleteBlog(id) {
     try {
-      await axios.delete(
-        `https://render.com/docs/web-services#port-binding/api/v1/blogs/${id}`
+      const response = await axios.delete(
+        `https://blog-app-3-0mfy.onrender.com/api/v1/blogs/${id}`
       );
       toast("deleted");
       navigate("/blogs");
